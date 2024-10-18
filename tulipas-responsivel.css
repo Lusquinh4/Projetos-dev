@@ -1,64 +1,5 @@
 @charset "UTF-8";
 
-/* Estilo geral */
-body {
-    font-family: 'Playfair Display', serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Ajustes no cabeçalho */
-#cabeçalho {
-    text-align: center;
-    margin: 20px 0;
-}
-
-#cabeçalho img {
-    max-width: 100%;
-    height: auto;
-}
-
-figcaption {
-    margin-top: 10px;
-}
-
-/* Ajustes para os botões */
-#botoes {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
-    padding: 20px;
-}
-
-#botoes button {
-    padding: 10px 20px;
-    background-color: #ff69b4;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#botoes button a {
-    text-decoration: none;
-    color: white;
-}
-
-/* Ajustes para o texto */
-#txt {
-    margin: 20px auto;
-    max-width: 800px;
-    padding: 0 20px;
-    text-align: justify;
-}
-
-/* Títulos e subtítulos */
-h1, h2, h3, h4 {
-    margin: 10px 0;
-}
-
 /* Media Queries para responsividade */
 @media (max-width: 768px) {
     /* Para telas médias (tablets) */
@@ -99,4 +40,140 @@ h1, h2, h3, h4 {
     #txt {
         padding: 0 10px;
     }
+}
+@media (max-width: 600px) {
+    .figcaption {
+        font-size: 0.8rem;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 600px) {
+    .figcaption {
+        font-size: 0.8rem;
+        padding: 5px;
+    }
+}
+
+/* Estilo geral */
+body {
+    background-color: pink;
+}
+
+#titulo{
+font-family: 'Playfair Display', serif;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+/* Ajustes no cabeçalho */
+#cabeçalho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 20px auto;
+    max-width: 100%;
+}
+   
+
+figure.titulo img {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 4px 4px 2px #ff69b4ee;
+}
+
+figure.titulo figcaption {
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    color: pink;
+    padding: 10px;
+    font-size: 1rem;
+    text-shadow: 2px 2px 2px #ff69b4ee;
+    opacity: 0;
+    transition: 1s;
+}
+
+figure.titulo img:hover + figcaption{
+    opacity: 1;
+}
+
+#subtitulo {
+    text-align: center;
+    margin: 20px 0;
+    font-weight: 900px;
+    color: white;
+    text-shadow: 2px 2px 2px pink;
+    background-color: #ff69b4c7;
+    background-size: auto;
+    background-position: center;
+    padding: 10px;
+    text-align: center;
+    transition: 2s;
+}
+
+#subtitulo:hover{
+    color: blueviolet;
+}
+
+
+#subtitulo2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    margin: 20px 0;
+    color: white;
+    text-shadow: 2px 2px 2px #ff69b4;
+    opacity: 0;
+    transition: 2s;
+}
+
+#subtitulo:hover + #subtitulo2{
+    opacity: 1;
+}
+
+/* Ajustes para os botões */
+#botoes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+#botoes button a {
+    text-decoration: none;
+    color: white;
+}
+
+button:hover {
+    background-color: rgba(137, 43, 226, 0.829);
+    color: #ff69b4;
+}
+
+/* Ajustes para o texto */
+#txt {
+    margin: 20px auto;
+    max-width: 800px;
+    padding:0 20px;
+    text-align: justify;
+    text-indent: 50px;
+}
+
+/* Títulos e subtítulos */
+h1, h2, h3, h4 {
+    margin: 10px 0;
 }
