@@ -8,23 +8,43 @@
         align-items: center;
     }
 
-    #txt {
-        padding: 0 15px;
-    }
+ html {
+    font-size: 30px;
+ }
+
+ h1 {
+    font-size: 1rem;
+ }
+
+ h2 {
+    font-size: 0.75rem;
+ }
+
+ h3 {
+    font-size: 0.5rem;
+ }
+
+ #text {
+    margin: 15px auto;
+ }
 }
 
 @media (max-width: 480px) {
     /* Para telas pequenas (celulares) */
+    html {
+        font-size: 25px;
+    }
+
     h1 {
-        font-size: 1.8em;
+        font-size: 1rem;
     }
 
     h2 {
-        font-size: 1.5em;
+        font-size: 0.75rem;
     }
 
     h3 {
-        font-size: 1.2em;
+        font-size: 0.5rem;
     }
 
     .menu {
@@ -38,7 +58,8 @@
     }
 
     #txt {
-        padding: 0 10px;
+        padding: 0 auto;
+        margin: 10px auto;
     }
 
     figure.titulo {
@@ -51,6 +72,27 @@
     }
 }
 @media (max-width: 600px) {
+
+    html {
+        font-size: 27px;
+    }
+
+    h1 {
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 0.75rem;
+    }
+
+    h3 {
+        font-size: 0.5rem;
+    }
+
+    #text {
+        margin: 13px auto;
+    }
+
     figure.titulo{
         max-width: 60%;
         height: auto;
@@ -59,9 +101,7 @@
     figure.titulo img{
         width: 100%;
     }
-}
 
-@media (max-width: 600px) {
     figure.titulo {
         max-width: 40%;
         height: auto;
@@ -73,6 +113,23 @@
 }
 
 /* Estilo geral */
+
+html {
+    font-size: 40px;
+}
+
+h1 {
+    font-size: 1rem;
+}
+
+h2{
+    font-size: 0.75rem;
+}
+
+h3{
+    font-size: 0.5rem;
+}
+
 body {
     background-color: pink;
 }
@@ -92,7 +149,7 @@ figure.titulo {
     margin: 0 auto;
     margin-top: 10px;
     position: relative;
-    border: 5px #ff69b4d8 solid;
+    box-shadow: 3px 3px 10px #ff69b4d8;
 }
 
 figure.titulo img{
@@ -114,27 +171,21 @@ figure.titulo figcaption{
 
 figure.titulo figcaption h1{
     color: pink;
-    text-shadow: 2px 2px 5px #ff69b4d8;
+    text-shadow: 2px 2px 5px rgb(0,0,0);
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 35px;
+    position: relative;
 }
 
 figure.titulo figcaption h2 {
     text-align: center;
-    margin: 20px 0;
+    font-size: 0.5rem;
     font-weight: 900px;
     color: white;
     text-shadow: 2px 2px 2px pink;
-    text-align: center;
-    transition: 2s;
+    width: 100%;
+    height: 100%;
     position: absolute;
-    bottom: 0px;
-    left: 7%;
-    text-align: center;
-}
-
-#subtitulo:hover{
-    color: #ff69b4d8;
 }
 
 
